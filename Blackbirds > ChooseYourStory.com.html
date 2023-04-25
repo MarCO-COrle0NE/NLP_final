@@ -1,245 +1,0 @@
-<!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="icon" type="image/x-icon" href="/Resources/Images/favicon.ico" /><script type="text/javascript" src="../Resources/jQuery/jquery-1.7.1.min.js"></script>
-<link type="text/css" rel="stylesheet" href="../Resources/Styles/Primary.css?23.1" /><link type="text/css" rel="stylesheet" href="../Resources/Styles/layout.css?23.1" /><link type="text/css" rel="stylesheet" href="../App_Themes/CYS/Styles.css?23.1" /><link type="text/css" rel="stylesheet" href="../Resources/jQuery/jquery-ui-1.10.3/smoothness/jquery-ui.min.css" /><link type="text/css" rel="stylesheet" href="../Resources/jQuery/jquery-ui-1.10.3/smoothness/jquery.ui.theme.css" /><script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.core.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.widget.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.button.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.mouse.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.draggable.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.position.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.resizable.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/jquery-ui-1.10.3/jquery.ui.dialog.min.js"></script>
-<script type="text/javascript" src="../Resources/jQuery/inedojq/inedojq_frameddialog.js?122.1.0.0"></script>
-<title>
-	Blackbirds > ChooseYourStory.com
-</title></head><style type="text/css">
-
-.storygame-sidebar { float:right;width:235px; margin-left:10px; }
-.storygame-sidebar .rating-level-block { width: 224px; margin-bottom:30px; }
-.storygame-sidebar .rating-level-block h3 { display: flex; justify-content: space-between; color: #752F19; font-size:16pt; border-bottom:1px solid #752F19; }
-.storygame-sidebar .rating-level-block .level-text { font-style: italic; font-size:105%;margin: 5px 5px 5px 0px; }
-.storygame-sidebar .rating-level-block .icons-container { width: 224px; height: 56px; }
-.storygame-sidebar .rating-level-block .icons-container .icons { overflow: hidden; white-space:nowrap; }
-.storygame-sidebar .rating-level-block .icons-container .icons img { width: 56px; height: 56px; }
-.storygame-sidebar .rating-level-block .additional-information { margin: 5px;  }
-.storygame-sidebar .rating-level-block .maturity-rating { margin:2px;padding:2px;border:1px dashed #752F19; color: #752F19; }
-.storygame-sidebar .rating-level-block a.button { cursor: inherit; }
-
-.storygame-description {background-color: rgba(180,178,164,.35);padding:10px;margin-right:255px; }
-.storygame-play-button { margin:20px 0; text-align:center; margin-right:255px;  }
-.storygame-comments-container { margin-right:255px; padding:0 10px; min-height:400px; }
-.storygame-comments-container h2 { margin-bottom: 0; }
-.storygame-comments-container .show-all-comments { display:block; margin:10px; }
-
-</style>
-<style type="text/css">
-
-.storygame-sidebar .rating-level-block h3 { font-size: 12pt; }
-.storygame-sidebar .rating-level-block .icons-container { display: none; }
-.storygame-description {background-color: inherit; }
-.storygame-sidebar .rating-level-block .level-text { font-size: 100%; }
-.storygame-play-button input { font-size: 150%; }
-.storygame-sidebar .rating-level-block .additional-information { font-size:90%;margin: 5px 0; }
-
-</style>
-
-    <body>
-<div id="HeaderContainer">
-    <div class="fixed-width-container"><div class="header-alerts-container"><div class="message-container"></div></div>
-		<script type="text/javascript">
-		$(function () {var thisfn = arguments.callee;$.ajax({ url: '/alerts', dataType: 'json', type: 'POST' }).success(function (messages) {if (messages && messages.length > 0) {$('.header-alerts-container').addClass(messages[0].type).fadeIn(1000);$('.header-alerts-container .message-container').append('<div class="message"><a href="' + messages[0].url + '">' + messages[0].message + '</a></div>');window.setInterval(function () {$('.header-alerts-fixed .message').fadeTo(500, .33).fadeTo(500, 1);}, messages[0].level == 'error' ? 3000 : 30000);return;}window.setTimeout(thisfn, 5000);});});
-		</script>
-		
-    </div>
-    <div class="header-contents fixed-width-container">
-        <div class="header-logo">
-            <a href="/"><img src="/Resources/Images/Layout/masthead.png" alt="ChooseYourStory.com"  /></a>
-        </div>
-    </div>
-</div>
-<div id="BodyContainer" class="fixed-width-container">
-    <div class="main-content"><form method="post" action="./blackbirds" id="ctl03">
-		<div class="aspNetHidden">
-		<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMGRkdsl2aScEPHzxmZvKi/EIkev0KBcHurZoJc6TVdQ5Qqs=" />
-		</div>
-
-		<div class="aspNetHidden">
-
-			<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D640F578" />
-			<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJ9ZHBzLU2hBdv3Ipr8+0KP/TJvHKgbqW7mRf6f3G6SBvffzTxYr0OpvKr5kVgtwW46fvICqh+ffQynAIhUS3AU" />
-		</div>		<h1 id="ctl09">
-			Blackbirds
-		</h1><div id="ctl10" class="subH1" style="font-style:italic;">
-			A <a id="ctl11" href="/Stories/Fantasy.aspx">fantasy</a> storygame by <a href="/Member/?Username=ninjapitka" title="Profile page for ninjapitka" style="text-overflow:ellipsis;">ninjapitka</a><br><br><h6><font color="#990000">Commended by mizal on 8/3/2021 9:47:02 PM</font></h6>
-		</div><div id="{0}" class="storygame-sidebar"><div class="rating-level-block"><h3>Player Rating<span class="rating" title="Adjusted Rating: 5.76">6.89/8</span></h3><div class="level-text">"#75 <a href='/stories/top.aspx'>overall</a>, #4 for <a href='/stories/2021.aspx'>2021</a>"</div><div class="icons-container" style="background-image: url(/Resources/Images/Icons/Iconshock/56x56/badge-01-background.png);"><div class="icons" style="width:192.92px"><img src="/Resources/Images/Icons/Iconshock/56x56/badge-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/badge-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/badge-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/badge-01.png" /></div></div><div class="additional-information">Based on <a title="The author&#39;s rating, outlier ratings, and redundant older ratings from a user are ignored" onclick="$.inedojq_frameddialog(this.href,{resizable: false,refreshOnClose: false,partialrender:{selector:&#39;&#39;,headerArgs:&#39;no-data&#39;},width:640,height:480});return false;" href="/story/blackbirds/player-ratings">81 ratings</a> since 08/03/2021<br/>Played 5,727 times (finished 117)</div></div><div class="rating-level-block"><h3>Story Difficulty<span class="rating" title="">7/8</span></h3><div class="level-text">"Wade in shark infested water"</div><div class="icons-container" style="background-image: url(/Resources/Images/Icons/Iconshock/56x56/dashboard-01-background.png);"><div class="icons" style="width:196px"><img src="/Resources/Images/Icons/Iconshock/56x56/dashboard-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/dashboard-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/dashboard-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/dashboard-01.png" /></div></div></div><div class="rating-level-block"><h3>Play Length<span class="rating" title="Approximate Word Count: 109,028">7/8</span></h3><div class="level-text">"It keeps going and going"</div><div class="icons-container" style="background-image: url(/Resources/Images/Icons/Iconshock/56x56/hourglass-01-background.png);"><div class="icons" style="width:196px"><img src="/Resources/Images/Icons/Iconshock/56x56/hourglass-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/hourglass-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/hourglass-01.png" /><img src="/Resources/Images/Icons/Iconshock/56x56/hourglass-01.png" /></div></div></div><div class="rating-level-block"><h3>Maturity Level<span class="rating" title="">6/8</span></h3><div class="level-text">"I'll need to see some identification"</div><div class="maturity-rating">Some material may be inappropriate for persons under age 16. If this were a movie, it would probably be between PG-13 and R.</div></div><div class="rating-level-block"><h3 style="margin-bottom: 5px;">Tags</h3><a id="ctl30" href="/Games/Search.aspx?tags=Action Adventure" class="button" style="color: unset; cursor: pointer; margin-bottom: 4px; text-decoration: none;"><img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/tag_green.png" alt="" />Action Adventure</a><a id="ctl31" href="/Games/Search.aspx?tags=Fantasy" class="button" style="color: unset; cursor: pointer; margin-bottom: 4px; text-decoration: none;"><img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/tag_green.png" alt="" />Fantasy</a><a id="ctl32" href="/Games/Search.aspx?tags=Humor" class="button" style="color: unset; cursor: pointer; margin-bottom: 4px; text-decoration: none;"><img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/tag_green.png" alt="" />Humor</a><a id="ctl33" href="/Games/Search.aspx?tags=War" class="button" style="color: unset; cursor: pointer; margin-bottom: 4px; text-decoration: none;"><img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/tag_green.png" alt="" />War</a></div></div><div id="ctl18" class="storygame-description">
-			<div data-autobreak style="white-space: pre-line;"><div data-autobreak style="white-space: pre-line;"><i>Citizens! The High King requires the patriotic swing of your sword! Enlist today! Benefits include free passage to the New World, unparalleled brotherhood, and a sense of purpose! Talk to a recruiter today!</i>
-
-Alteran, a superpower nation unlike the world has ever witnessed. Proper, rule-following, like a civilized nation should be.
-
-Magda, a territory threatening to rival Alteran in both might and colonization of the New World. Supreme Leader Fargrave (spit), ever a constant presence at the High King's heel. 
-
-Harri'ar, natives of the New World, standing a full head taller than the average civilized man. Mere beasts in a human-shaped body.
-  
-The old ways are dying; the new are upon us.
-  
-<b>Author's note:</b>
-
-Official endings will be labeled as such. Be sure to hit the "Go Back" button should you come across a premature death.
-
-Submission for <a href="https://chooseyourstory.com/forums/news-and-updates/message/26851">the War on Intfiction</a>.  </div></div>
-		</div><div id="ctl19" class="storygame-play-button">
-			<input type="submit" name="ctl20" value="Play Blackbirds" onclick="window.open(&#39;../game/player/?65742&#39;,&#39;_game65742&#39;,&#39;height=600,width=737,directories=no,location=no,resizable=yes,menubar=no,toolbar=no,scrollbars=yes&#39;); return false;" title="Play Blackbirds" />
-		</div><div id="ctl21" class="storygame-comments-container">
-			<h2 id="ctl22">
-				Player Comments
-			</h2><div class="storygame-comments"><div id="ctl34" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl35">
-					<div id="ctl36" style="float:left;margin-right:3px;">
-						<img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/star.png" />
-					</div><div id="comment1" class="body collapsed">
-						This review contains spoilers, you know the drill. So let&#39;s quickly continue.<br /><br />Out-fucking-standing. With his most recent story (although during the writing of this review the madman has already published a new one), Ninja&#39;s writing showcases an absolute command over page and pace. The story is like an ever crescendoing beat of Blackbird war-drums, every page quickening the rythm, weaving new building blocks into the plot. Listen, like Camelon, I also thought the start was slow, but after the saving private Musket beach scene, the story just grabbed my attention by the throat and never let go.<br /><br />Ninja&#39;s protagonists have always been introspective and filled to the brim with thoughts and opinions. In some previous stories I thought it detracted from the plot itself. On this one, however, I feel it only adds to it. The thoughts flow into the scenes and are either immediately applicable, or serve as base for further development. I previously mentioned the expert pace, and this story gives us enough time between plot beats to breathe air into the world. This is only supported by the introspection and excellent conversations with the side characters.<br /><br />That brings me to my only critique, aside from a quick fuck you for teasing us a whole pirate storyline. First path I chose was the Pocahontas one and that really delivered, almost made me quit the story, like stopping halfway into a tasting when finding the perfect beverage. It convinced me the linearity thus far didn&#39;t bother me at all. If it had been a novel I&#39;d enjoy it thoroughly. However, logically, it left behind many of the previous plot threads (read characters), instead choosing to focus on the Indians and their gods. So I wanted to explore the second half, and that felt rushed, as if you&#39;d passed the 100k mark and were done with it. <br /><br />Why search for a surgeon within the hostile walls when everyone&#39;s perfectly suited to treat the wound. Then there&#39;s a quick summary of Prinn, and a last confrontation with Bastus and with that, the whole squad is forgotten. Within a choice, you&#39;re at an epilogue that felt more like an afterthought than a satisfying conclusion, tying everything together. Where the Pocahontas path dealt with personal discipline, I&#39;d quite liked to see this path go further in exploring the discipline of the army, especially at that point where everything seemed to be at its hardest and at the point of breaking, using all those characters you&#39;ve spent so much time and effort to build up.<br /><br />As an afterthought of my own, I really want to repeat that Ninja has a gift at describing the essence of scenes and scenery, often without adding many tangible details that impose his own vision. This really allows your own imagination to paint a clear picture, only further pumping life in his world. 8/8
-					</div><div id="ctl38" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment1&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment1&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl39">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl40" class="from">
-					— <a href="/Member/?Username=enterpride" title="Profile page for enterpride" style="text-overflow:ellipsis;">enterpride</a> on 9/10/2021 11:56:59 AM  with a score of 0
-				</div>
-			</div><div id="ctl44" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl45">
-					<div id="ctl46" style="float:left;margin-right:3px;">
-						<img src="/0x44/InedoLib/Inedo.Web.Controls.IconImage/ProcessImageRequest/InedoIcons/F3Silk/16x16/star.png" />
-					</div><div id="comment2" class="body collapsed">
-						It&#39;s a slow burn, but quite a ride. The game does a great job establishing setting and the lay of the land, give some characterization to side characters, and flesh out the MC, but it’s low on any sort of action for most of the beginning. After a while I felt like the character, “Another day. Another endless stretch of blue water before you. Blue water, blue sky, brown deck.” Eventually things do speed up and events seem more critical, but it is well after they’ve landed in the New World. On the plus side, the incremental pacing means the story becomes more interesting as it goes along, and that plenty of things brought up later are call-backs to things the story took time to establish prior.<br /><br />The plot is a meandering one, vs. a solid set up/goal/resolution. At first this gave the game a bit of a floundering feel, but eventually the twists and turns ended up being a bonus as they supported the underlying themes. Expectations are frequently subverted, and even though the world is fantasy, the plot takes a grittier ‘real-life’ aspect where things aren’t structured neatly. If things do not go as expected, you have to adapt and chart a new course. Sometimes there is the obvious right thing to do, but more often it&#39;s just doing what you can to live another day.<br /><br />As to the world-building, it&#39;s fantastic. Ninjapitka builds a world with a number of different key locations and at least three warring factions, complete with lore, politics, and plenty of ambience. And the characters within the world seem fully settled in and are aware of how they relate to it. There are a number of wonderful pieces of description. A few phrases tend to be over-used, but that isn’t unexpected in a storygame of this size. Even some of the expressions and idioms used pull from the world itself, or are designed for the world itself.<br /><br />The main character was interesting, but somewhat confusing. At first, he has a cynical, practical patriotism that even if he doesn’t think the bluster of the King and propaganda of promised wealth is founded, he does recognize that they are the biggest country, no other nation is a threat, and serving is more beneficial than not.  Yet at other times, he shows a fervent devotion to the king out of admiration. Over the course of the game, his character could radically change within a couple of scenes. He could suddenly do things contrary to prior established traits, or think in a way directly opposite to something he thought before, which made the immersion rocky. Even his inward perspective seemed to change a lot – from cynically viewing the chain of command as a pail of water tumbling down the hill from the king, for example, to later viewing it through paranoid necessity that questioning soldiers could cost lives or crack the nation. Then later thinking it’s up to the soldier to take initiative rather than waiting for commands, etc. With one soldier the character would bring up his questions, concerns, skepticism about propaganda, etc. then with another he’d toe the line on rigidly insisting they follow commands. And he did this in his own head as well, one moment scoffing at ludicrous promises, yes-men, or obviously poor organization and bad planning, and then the next thinking he should never question anything – to then turn around and question things soon after. Some of these changes were amusingly ironic, such as it being established that he found math boring (at least as a kid) only to be nicknamed “Mr. Mathematician” at one point, or one character getting after him for never questioning while another praises him for always speaking his mind. However, even though the mc was hard to pin and a bit conflicted, this inner tension and inconsistency does actually pay off throughout the later portions of the story-game - much of it appears to have been by design.  It even tied in with the larger themes of command, organization, trust and betrayal, power, propaganda, freedom, fanaticism, honor, and individuality.<br /><br />The side-characters were very well done. Not every side soldier or other person was described or fleshed out, of course, but there were a number of prominent npcs that had distinct personalities. Not only this, but their quirks and habits often subverted expectations. E.g. the slightly messy, drunken captain concerned with decorum, the potty-humor brute with a keen intellect and observation skills, or the prim-and-proper, disciplined soldier addicted to gambling and annoyed by the chain of command. This was a nice touch to see that first appearances or their public personas were not a perfect match to who they were when alone with the MC, and that even side characters could change and develop over time. It’s also hinted that their public personas don’t necessarily fool everyone else. Another element that I thought was clever was how the flaws or perceived flaws of characters could be adapted into their strengths, or the seeming strengths of a character at first introduction could end up a cover for deep flaws. <br /><br /><br />There was ample attention to detail, though sometimes the perspective shifted from what the MC was noting to a broader god-mode look or announcement. Sometimes the POV shifted entirely to another group - which wasn&#39;t a bad thing as it developed the lore and gave the reader insight into the position of other factions the character would not otherwise have had. It broke immersion slightly, but the trade-off was worth it.<br /><br />Overall, the writing was well-done. There were frequent sentence fragments, but those mostly seemed stylistic and  usually did not hurt the flow. The only area this got a bit problematic was when someone or something would be described in a particular moment, then the next bit would be a fragment with the structure &#39;thing/person, description.&#39; E.g. “Lionel, perhaps the most proper of you all.” It would take a moment to realize that this latter description was meant to be a more abstract, broader view of the thing or person in general, rather than a continuation of the particular instance.<br /><br />Conversations were generally well-done, serving to add flavor to the characters, move the plot along, or give insight to the characters or themes. They did a good job conveying the realities of war, progress, unspoken tension between characters, and the things people value as important. Sometimes, an odd grammar turn or the accidental use of the wrong word would momentarily break the immersion. The descriptions were generally fantastic, with a good command of metaphor and a balance of attention to character and setting.<br /><br />As to the choices or &#39;game&#39; aspect, most were low-impact or not present when expected. In the beginning, most of the choice is on dialogue, minor action, or where to focus attention. In the first life-or-death situation I came across, the character handled himself, so there were no choices involved. Choices were often described in an ambiguous way, as well, which could lead to the MC doing the opposite the thing I expected him to do (like being a goof suddenly instead of paying attention.) At other times, choices the MC had to make were not realistic for where he was in the chain of command. Then there were times where the MC broke character (e.g. suddenly gambling after it had been established several times that he isn’t in joining the gambling) without giving the player a choice. So when the MC loses, even if it is just flavor text, it feels aggravating. There were often 4-5 pages in a row with no real choice other than continue, possibly converse with an npc, or see a different perspective. Then when a point of key action is arrived at (e.g. muggers, a battle, encounter with a potential enemy) there would often be no choice of response or interaction. Choices did slowly increase in consequence later in the game, but I did find myself wishing there was more balance on crucial life-direction choices to flavor-fluff choices like whether to sleep or talk. This was, for me, the weakest element of the storygame.<br /><br />Overall, though, it&#39;s a fantastic adventure with a lot of good twists and subverted tropes. It&#39;s well worth the time exploring it.<br />
-					</div><div id="ctl48" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment2&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment2&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl49">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl50" class="from">
-					— <a href="/Member/?Username=Camelon" title="Profile page for Camelon" style="text-overflow:ellipsis;">Camelon</a> on 8/3/2021 6:52:54 PM  with a score of 0
-				</div>
-			</div><div id="ctl54" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl55">
-					<div id="comment3" class="body collapsed">
-						It’s perfect to poop on
-					</div><div id="ctl58" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment3&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment3&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl59">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl60" class="from">
-					— Anonymous  on 3/9/2023 6:13:58 PM  with a score of 0
-				</div>
-			</div><div id="ctl64" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl65">
-					<div id="comment4" class="body collapsed">
-						The ending I reached left me annoyed, it is one of the best stories but it is one of those this is not the end endings. I hope a second book is made or an expansion of this one.
-					</div><div id="ctl68" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment4&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment4&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl69">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl70" class="from">
-					— <a href="/Member/?Username=Wanderer" title="Profile page for Wanderer" style="text-overflow:ellipsis;">Wanderer</a> on 10/16/2022 5:49:44 PM  with a score of 0
-				</div>
-			</div><div id="ctl74" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl75">
-					<div id="comment5" class="body collapsed">
-						Awesome game- Super descriptive
-					</div><div id="ctl78" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment5&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment5&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl79">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl80" class="from">
-					— Sparrow on 6/10/2022 11:45:28 AM  with a score of 0
-				</div>
-			</div><div id="ctl84" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl85">
-					<div id="comment6" class="body collapsed">
-						IT is very imaginative and descriptive. I love the plot. 10/10
-					</div><div id="ctl88" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment6&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment6&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl89">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl90" class="from">
-					— <a href="/Member/?Username=273133" title="Profile page for 273133" style="text-overflow:ellipsis;">273133</a> on 5/25/2022 5:27:34 PM  with a score of 0
-				</div>
-			</div><div id="ctl94" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl95">
-					<div id="comment7" class="body collapsed">
-						I really enjoyed this story quite a bit. There were times when it came off as a little too wordy in the descriptors but that is quite minor. I do wish that there were just a few more sides to this story. SPOILER ALERT HERE:<br /><br />It is clear that the Man God is intending to take over your body even before the trials. Why not have one path that veers off into an epilogue to stop it before it starts? Maybe I missed it though.<br />
-					</div><div id="ctl98" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment7&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment7&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl99">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl100" class="from">
-					— <a href="/Member/?Username=Yandeleon" title="Profile page for Yandeleon" style="text-overflow:ellipsis;">Yandeleon</a> on 4/19/2022 3:48:15 PM  with a score of 0
-				</div>
-			</div><div id="ctl104" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl105">
-					<div id="comment8" class="body collapsed">
-						A real journey.
-					</div><div id="ctl108" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment8&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment8&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl109">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl110" class="from">
-					— <a href="/Member/?Username=Rinlen222" title="Profile page for Rinlen222" style="text-overflow:ellipsis;">Rinlen222</a> on 4/11/2022 10:54:45 AM  with a score of 0
-				</div>
-			</div><div id="ctl114" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl115">
-					<div id="comment9" class="body collapsed">
-						i dont think so good at this
-					</div><div id="ctl118" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment9&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment9&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl119">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl120" class="from">
-					— Albert on 3/8/2022 6:58:45 AM  with a score of 0
-				</div>
-			</div><div id="ctl124" class="comment-block" style="display: flex; flex-direction: column;">
-				<div id="ctl125">
-					<div id="comment10" class="body collapsed">
-						Entertaining and well written. 
-					</div><div id="ctl128" class="gradienthide" onclick="(() => { document.getElementById(&quot;comment10&quot;).classList.toggle(&#39;expanded&#39;);document.getElementById(&quot;comment10&quot;).classList.toggle(&#39;collapsed&#39;); })();return false;">
-						<div id="ctl129">
-							view more...
-						</div>
-					</div>
-				</div><div id="ctl130" class="from">
-					— <a href="/Member/?Username=Evilgarison" title="Profile page for Evilgarison" style="text-overflow:ellipsis;">Evilgarison</a> on 1/31/2022 10:19:38 PM  with a score of 0
-				</div>
-			</div></div><a id="ctl24" class="show-all-comments" onclick="$.inedojq_frameddialog(this.href,{resizable: true,refreshOnClose: false,partialrender:{selector:&#39;&#39;,headerArgs:&#39;no-data&#39;},width:640,height:480});return false;" href="/story/blackbirds/comments">Show All Comments</a>
-		</div></form>
-    </div>
-    <div class="sidebar-content"><ul id="ctl04">
-			<li id="ctl134"><a id="ctl135" href="/Default.aspx">Home</a></li><li id="ctl136"><a id="ctl137" class="navbar-menu selected" href="/Stories/">Storygames</a><ul id="ctl138" class="navbar-menuitem-container">
-				<li id="ctl139"><a id="ctl140" href="/stories/random">Random</a></li><li id="ctl141"><a id="ctl142" href="/Games/Search.aspx">Search</a></li><li id="ctl143"><hr /></li><li id="navbarNewStories"><a id="ctl144" href="/Stories/new.aspx">Newly Created</a><a id="ctl145" href="/Stories/newStoriesRss.ashx" title="Syndicate with RSS"><img id="ctl146" alt="RSS Feed" src="/Resources/Images/feed-icon-12x12.gif" style="border: 0px;" /></a></li><li id="ctl147"><a id="ctl148" href="/Stories/top.aspx">Top Rated</a></li><li id="ctl149"><hr /></li><li id="ctl150"><a id="ctl151" href="/Stories/Fantasy.aspx">Fantasy</a></li><li id="ctl152"><a id="ctl153" class="narrower" href="/Stories/Grimdark_Fantasy.aspx">Grimdark Fantasy</a></li><li id="ctl154"><a id="ctl155" href="/Stories/Sci-Fi.aspx">Sci-Fi</a></li><li id="ctl156"><a id="ctl157" href="/Stories/Modern.aspx">Modern</a></li><li id="ctl158"><a id="ctl159" href="/Stories/Horror.aspx">Horror</a></li><li id="ctl160"><a id="ctl161" href="/Stories/Love__0x26__Dating.aspx">Love &amp; Dating</a></li><li id="ctl162"><a id="ctl163" class="narrower" href="/Stories/Mystery__0x2f__Thriller.aspx">Mystery / Thriller</a></li><li id="ctl164"><a id="ctl165" href="/Stories/Family_Friendly.aspx">Family Friendly</a></li><li id="ctl166"><a id="ctl167" href="/Stories/Historical.aspx">Historical</a></li><li id="ctl168"><a id="ctl169" href="/Stories/Puzzle__0x2f__Games.aspx">Puzzles / Games</a></li><li id="ctl170"><a id="ctl171" href="/Stories/Edutainment.aspx">Edutainment</a></li><li id="ctl172"><a id="ctl173" href="/Stories/Fan_Fiction.aspx">Fan Fiction</a></li>
-			</ul></li><li id="ctl174"><a id="ctl175" class="navbar-menu" href="/forums">Forums</a><ul id="ctl176" class="navbar-menuitem-container">
-				<li id="ctl177"><a id="ctl178" href="/forums/newbie-central">Newbie Central</a></li><li id="ctl179"><a id="ctl180" href="/forums/the-lounge">The Lounge</a></li><li id="ctl181"><a id="ctl182" href="/forums/news-and-updates">News &amp; Updates</a></li><li id="ctl183"><a id="ctl184" href="/forums/the-parlor-room">The Parlor Room</a></li><li id="ctl185"><a id="ctl186" href="/forums/creative-corner">Creative Corner</a></li><li id="ctl187"><a id="ctl188" class="narrower" href="/forums/writing-workshop">Writing Workshop</a></li><li id="ctl189"><a id="ctl190" href="/forums/reading-corner">Reading Corner</a></li><li id="ctl191"><a id="ctl192" class="narrower" href="/forums/advanced-editor-forum">Adv. Editor Forum</a></li><li id="ctl193"><a id="ctl194" href="/forums/feature-wishing-well">Wishing Well</a></li><li id="ctl195"><a id="ctl196" class="narrower" href="/forums/bugs-and-problems">Bugs and Problems</a></li>
-			</ul></li><li id="ctl199"><a id="ctl200" class="navbar-menu" href="/my/">My Stuff</a><ul id="ctl201" class="navbar-menuitem-container">
-				<li id="ctl202"><a id="ctl203" href="/My/Games.aspx">Storygames</a></li><li id="ctl204"><a id="ctl205" href="/My/Pictures/Default.aspx">Pictures</a></li><li id="ctl206"><a id="ctl207" href="/my/messages">Messages</a></li><li id="ctl208"><a id="ctl209" href="/My/Notifications">Notifications</a></li><li id="ctl210"><a id="ctl211" href="/My/Duels/Default.aspx">Duels</a></li><li id="ctl212"><a id="ctl213" href="/My/Saves.aspx">Saves</a></li><li id="ctl214"><a id="ctl215" href="/My/Comments.aspx">Comments</a></li><li id="ctl216"><a id="ctl217" href="/My/Points.aspx">Points</a></li><li id="ctl218"><a id="ctl219" href="/My/Commendations.aspx">Commendations</a></li><li id="ctl220"><a id="ctl221" href="/my/notepad">Notepad</a></li><li id="ctl222"><a id="ctl223" href="/My/Profile.aspx">Profile</a></li><li id="ctl224"><a id="ctl225" href="/My/ProfileView.aspx">View Profile</a></li>
-			</ul></li><li id="ctl226"><a id="ctl227" class="navbar-menu" href="/help/">Help &amp; Info</a><ul id="ctl228" class="navbar-menuitem-container">
-				<li id="ctl229"><a id="ctl230" href="/Help/History.aspx">CYOA History</a></li><li id="ctl231"><a id="ctl232" href="/Help/AboutUs.aspx">About Us</a></li><li id="ctl233"><a id="ctl234" href="/Help/PrivacyPolicy.aspx">Privacy Policy</a></li><li id="ctl235"><a id="ctl236" href="/Help/TermsOfService.aspx">Terms Of Service</a></li>
-			</ul></li><li id="ctl260"><a id="ctl261" href="/Logon.aspx">Logon</a></li>
-		</ul>
-    </div>
-    <div class="footer-content"><div id="ctl264">
-			<strong>Who Is Online</strong>
-		</div><div id="ctl265">
-			86 guests and <a href="/Member/?Username=Larimar" title="Profile page for Larimar" style="text-overflow:ellipsis;">Larimar</a>, <a href="/Member/?Username=mihai899" title="Profile page for mihai899" style="text-overflow:ellipsis;">mihai899</a>, <a href="/Member/?Username=glitterunicorn" title="Profile page for glitterunicorn" style="text-overflow:ellipsis;">glitterunicorn</a>, <a href="/Member/?Username=EndMaster" title="Profile page for EndMaster" style="text-overflow:ellipsis;">EndMaster</a>, <a href="/Member/?Username=MrAce321" title="Profile page for MrAce321" style="text-overflow:ellipsis;">MrAce321</a>, <a href="/Member/?Username=hetero_malk" title="Profile page for hetero_malk" style="text-overflow:ellipsis;">hetero_malk</a>, <a href="/Member/?Username=CavusRex" title="Profile page for CavusRex" style="text-overflow:ellipsis;">CavusRex</a>, <a href="/Member/?Username=RussCloud" title="Profile page for RussCloud" style="text-overflow:ellipsis;">RussCloud</a>, <a href="/Member/?Username=enterpride" title="Profile page for enterpride" style="text-overflow:ellipsis;">enterpride</a>, <a href="/Member/?Username=urnam0" title="Profile page for urnam0" style="text-overflow:ellipsis;">urnam0</a>, <a href="/Member/?Username=Johnwick" title="Profile page for Johnwick" style="text-overflow:ellipsis;">Johnwick</a>.
-		</div>
-    </div>
-</div>
-<div id="Footer" class="fixed-width-container">version 23.1 | ChooseYourStory © 2001 - 2023, Halogen Studios Entertainment
-		 | <a href="/contact-us">contact us</a>
-		
-</div>
-    </body>
-</html>
